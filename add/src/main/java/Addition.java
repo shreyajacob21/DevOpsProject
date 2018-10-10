@@ -21,8 +21,8 @@ public class Addition extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		//response.getWriter().append("Served at: ").append(request.getContextPath());
 		out= response.getWriter(); 
-		String num1=(request.getParameter("no1"));
-		String num2=(request.getParameter("no2"));
+		String num1=(request.getParameter("n1"));
+		String num2=(request.getParameter("n2"));
 		out.println(printAdd(num1,num2));
 	}
 
